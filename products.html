@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Products — Krishisetu Seeds</title>
+  <meta name="description" content="Explore Krishisetu Seeds' complete range of premium-quality paddy, wheat, maize, mustard, pulses and vegetable seeds for Indian farmers." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Product page specifics */
+    .product-detail {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 0;
+      margin-bottom: 40px;
+      transition: var(--transition);
+    }
+    .product-detail:hover { box-shadow: var(--shadow-md); }
+    .product-detail-img {
+      background: linear-gradient(135deg, #f0f7ed, #e0ecdb);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      min-height: 340px;
+    }
+    .product-detail-img img {
+      max-height: 360px;
+      width: auto;
+      object-fit: contain;
+    }
+    .product-detail-body { padding: 40px; }
+    .product-detail-body h3 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .product-tag {
+      display: inline-block;
+      background: var(--green-100);
+      color: var(--green-700);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+    .product-detail-body p { color: var(--muted); margin-bottom: 20px; }
+    .product-specs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px 30px;
+      margin-bottom: 24px;
+      padding: 22px;
+      background: var(--cream);
+      border-radius: var(--radius);
+      border-left: 4px solid var(--gold);
+    }
+    .product-specs div { font-size: 14px; }
+    .product-specs strong { display: block; color: var(--green-900); font-size: 13px; margin-bottom: 2px; }
+    .product-specs span { color: var(--muted); }
+    @media (max-width: 768px) {
+      .product-detail { grid-template-columns: 1fr; }
+      .product-specs { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span><i class="fa-solid fa-envelope"></i> info@krishisetuagro.in</span>
+        <span><i class="fa-solid fa-phone"></i> +91 91091 02484</span>
+      </div>
+      <div class="topbar-right">
+        <span><i class="fa-solid fa-certificate"></i> ISO 9001:2015 Certified Company</span>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Krishisetu Seeds" />
+        <div class="logo-text">
+          <span class="brand">KRISHISETU</span>
+          <span class="tagline-hi">किसान और उन्नति का सेतु</span>
+        </div>
+      </a>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="index.html#quality">Quality</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-primary nav-cta">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+      <button class="nav-toggle" id="navToggle"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Our Products</h1>
+      <div class="breadcrumb"><a href="index.html">Home</a> <i class="fa-solid fa-angle-right"></i> Products</div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section" style="padding-bottom: 30px;">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-eyebrow">Premium Seed Range</span>
+        <h2 class="section-title">Seeds for Every Season, <span class="accent">Every Farmer</span></h2>
+        <p>From staple grains to high-value vegetables — discover our full catalogue of scientifically-bred, quality-tested seed varieties.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT LIST -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+
+      <!-- PADDY -->
+      <div class="product-detail">
+        <div class="product-detail-img">
+          <img src="images/paddy-bag.png" alt="Paddy Seeds" onerror="this.src='https://images.unsplash.com/photo-1568347877321-f8935c7dc5a8?w=700&q=80'" />
+        </div>
+        <div class="product-detail-body">
+          <span class="product-tag">Kharif Crop</span>
+          <h3>Paddy Seeds</h3>
+          <p>Our paddy seeds are bred for high tillering, uniform grain quality and excellent disease resistance. Suitable for both irrigated and rainfed conditions across major rice-growing belts of India.</p>
+          <div class="product-specs">
+            <div><strong>Germination (Min.)</strong><span>80%</span></div>
+            <div><strong>Physical Purity</strong><span>98%</span></div>
+            <div><strong>Genetic Purity</strong><span>95%</span></div>
+            <div><strong>Weed Seed</strong><span>Nil</span></div>
+            <div><strong>Pack Size</strong><span>5 kg / 10 kg / 25 kg</span></div>
+            <div><strong>Season</strong><span>Kharif (Jun – Nov)</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- WHEAT -->
+      <div class="product-detail">
+        <div class="product-detail-img">
+          <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=700&q=80" alt="Wheat Seeds" />
+        </div>
+        <div class="product-detail-body">
+          <span class="product-tag">Rabi Crop</span>
+          <h3>Wheat Seeds</h3>
+          <p>High-yielding wheat varieties developed for North Indian Rabi season. Strong stems, rust-resistant and excellent for chapati & bread-making quality.</p>
+          <div class="product-specs">
+            <div><strong>Germination (Min.)</strong><span>85%</span></div>
+            <div><strong>Physical Purity</strong><span>98%</span></div>
+            <div><strong>Genetic Purity</strong><span>95%</span></div>
+            <div><strong>Weed Seed</strong><span>Nil</span></div>
+            <div><strong>Pack Size</strong><span>10 kg / 25 kg / 40 kg</span></div>
+            <div><strong>Season</strong><span>Rabi (Nov – Apr)</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- MAIZE -->
+      <div class="product-detail">
+        <div class="product-detail-img">
+          <img src="https://images.unsplash.com/photo-1601593768799-76d3ec1a4c8a?w=700&q=80" alt="Maize Seeds" />
+        </div>
+        <div class="product-detail-body">
+          <span class="product-tag">Kharif / Rabi</span>
+          <h3>Maize / Corn Seeds</h3>
+          <p>Hybrid maize seeds offering uniform cob size, deep kernels and superior fodder quality. Ideal for both grain and fodder farmers.</p>
+          <div class="product-specs">
+            <div><strong>Germination (Min.)</strong><span>90%</span></div>
+            <div><strong>Physical Purity</strong><span>98%</span></div>
+            <div><strong>Genetic Purity</strong><span>95%</span></div>
+            <div><strong>Weed Seed</strong><span>Nil</span></div>
+            <div><strong>Pack Size</strong><span>1 kg / 4 kg / 10 kg</span></div>
+            <div><strong>Season</strong><span>All season</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- MUSTARD -->
+      <div class="product-detail">
+        <div class="product-detail-img">
+          <img src="https://images.unsplash.com/photo-1601493700518-42b241a914d2?w=700&q=80" alt="Mustard Seeds" />
+        </div>
+        <div class="product-detail-body">
+          <span class="product-tag">Rabi Crop</span>
+          <h3>Mustard Seeds</h3>
+          <p>Oil-rich mustard varieties bred for higher oil content (~40%), excellent bold seed and strong tolerance to common Rabi pests and diseases.</p>
+          <div class="product-specs">
+            <div><strong>Germination (Min.)</strong><span>85%</span></div>
+            <div><strong>Physical Purity</strong><span>98%</span></div>
+            <div><strong>Oil Content</strong><span>~40%</span></div>
+            <div><strong>Weed Seed</strong><span>Nil</span></div>
+            <div><strong>Pack Size</strong><span>1 kg / 2 kg / 5 kg</span></div>
+            <div><strong>Season</strong><span>Rabi (Oct – Mar)</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- PULSES -->
+      <div class="product-detail">
+        <div class="product-detail-img">
+          <img src="https://images.unsplash.com/photo-1471194402529-8e0f5a675de6?w=700&q=80" alt="Pulses Seeds" />
+        </div>
+        <div class="product-detail-body">
+          <span class="product-tag">All Seasons</span>
+          <h3>Pulses &amp; Oilseeds</h3>
+          <p>A complete range of pulses and oilseeds — Moong, Urad, Arhar (Tur), Chana, Soybean and Groundnut — bred for higher protein content and improved disease resistance.</p>
+          <div class="product-specs">
+            <div><strong>Germination (Min.)</strong><span>80–90%</span></div>
+            <div><strong>Physical Purity</strong><span>98%</span></div>
+            <div><strong>Genetic Purity</strong><span>95%</span></div>
+            <div><strong>Varieties</strong><span>6+ pulse types</span></div>
+            <div><strong>Pack Size</strong><span>1 kg / 5 kg / 25 kg</span></div>
+            <div><strong>Season</strong><span>Kharif & Rabi</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- VEGETABLE -->
+      <div class="product-detail">
+        <div class="product-detail-img">
+          <img src="https://images.unsplash.com/photo-1592841200221-a6898f307baa?w=700&q=80" alt="Vegetable Seeds" />
+        </div>
+        <div class="product-detail-body">
+          <span class="product-tag">Hybrid &amp; OP</span>
+          <h3>Vegetable Seeds</h3>
+          <p>Tomato, Chilli, Brinjal, Okra (Bhindi), Bottle Gourd, Bitter Gourd, Cucumber and more — high-yielding hybrid and open-pollinated vegetable seeds for kitchen gardens and commercial cultivation.</p>
+          <div class="product-specs">
+            <div><strong>Germination (Min.)</strong><span>85%</span></div>
+            <div><strong>Physical Purity</strong><span>99%</span></div>
+            <div><strong>Type</strong><span>Hybrid &amp; OP</span></div>
+            <div><strong>Varieties</strong><span>20+ vegetables</span></div>
+            <div><strong>Pack Size</strong><span>10 gm / 50 gm / 100 gm</span></div>
+            <div><strong>Season</strong><span>All season</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <div>
+        <h2>Need a Specific Variety?</h2>
+        <p>Talk to our agronomy team — we'll recommend the best Krishisetu seed for your soil, season and crop goals.</p>
+      </div>
+      <a href="contact.html" class="btn btn-gold btn-lg">Get In Touch <i class="fa-solid fa-phone"></i></a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.png" alt="Krishisetu Seeds" />
+          <div>
+            <span class="brand">KRISHISETU</span>
+            <span class="tagline-hi">किसान और उन्नति का सेतु</span>
+          </div>
+        </a>
+        <p class="footer-about">An ISO 9001:2015 certified seed company building a bridge between farmers and progress through quality, research and trust.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+          <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Products</a></li>
+          <li><a href="index.html#quality"><i class="fa-solid fa-angle-right"></i> Quality</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Products</h4>
+        <ul>
+          <li><a href="products.html"><i class="fa-solid fa-seedling"></i> Paddy Seeds</a></li>
+          <li><a href="products.html"><i class="fa-solid fa-seedling"></i> Wheat Seeds</a></li>
+          <li><a href="products.html"><i class="fa-solid fa-seedling"></i> Maize Seeds</a></li>
+          <li><a href="products.html"><i class="fa-solid fa-seedling"></i> Mustard Seeds</a></li>
+          <li><a href="products.html"><i class="fa-solid fa-seedling"></i> Vegetable Seeds</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i><span>Krishisetu Seeds Pvt. Ltd.<br/>Vill. & Post, Dist., State - 000000</span></li>
+          <li><i class="fa-solid fa-phone"></i><a href="tel:+919109102484">+91 91091 02484</a></li>
+          <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@krishisetuagro.in">info@krishisetuagro.in</a></li>
+          <li><i class="fa-solid fa-globe"></i><a href="https://www.krishisetuagro.in" target="_blank">www.krishisetuagro.in</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year"></span> Krishisetu Seeds Pvt. Ltd. All rights reserved.</p>
+        <p>Designed with <i class="fa-solid fa-heart" style="color:#e74c3c"></i> for Indian Farmers</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919109102484" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
